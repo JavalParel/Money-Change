@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include<unistd.h>
 int main() {
-	int amt, total,b_amt;
-	d:printf("\nEnter the billed amount :- ");
+	int amt, total,b_amt,sel;
+	do{printf("\nEnter the billed amount :- ");
 	scanf("%d",&b_amt);
 	printf("\nEnter the given amount :- ");
 	scanf("%d",&amt);
 	amt=amt-b_amt;
 	if(amt>1){
-	for(int i=0; i<=2; i++)
+	for(int i=0; i<=2; i++)//this is just for giving realistic look to my program
 	{
 		if(i==0)
 		{
@@ -19,7 +19,8 @@ int main() {
 			printf("..");
 		}
 	sleep(1);
-	}
+	}//this is the end of for loop
+	//start counting
 	total = (int)amt/500;
 	printf("\n\t\t\t\t+==================================+");
 	printf("\n\t\t\t\t| No. |        Type      | Amount  |");
@@ -104,10 +105,11 @@ int main() {
 	a=total*1;
 	printf(" %d       |\n", a);
 	printf("\t\t\t\t+=====+==================+=========+");
+		//end counting
 	printf("\n\n-------------------------------------------------------------------------------------------------\n");
-	goto d;
+		
 	}
-	else
-		printf("Invalid input please try again...");
-
+	printf("Press 0 for exit");
+		scanf("%d",sel);
+}while(sel != 0);
 }
