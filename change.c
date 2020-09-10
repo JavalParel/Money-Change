@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include<unistd.h>
 int main() {
-	d:int amt, total,b_amt;
-	printf("\nEnter the billed amount :- ");
+	int amt, total,b_amt;
+	d:printf("\nEnter the billed amount :- ");
 	scanf("%d",&b_amt);
 	printf("\nEnter the given amount :- ");
 	scanf("%d",&amt);
