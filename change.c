@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include<unistd.h>
 int main() {
-	int amt, total,b_amt,sel;
+	int amt, total,b_amt,sel=0;
 	do{printf("\nEnter the billed amount :- ");
 	scanf("%d",&b_amt);
 	printf("\nEnter the given amount :- ");
